@@ -1,7 +1,118 @@
-<html>
-<body>
-    <a href="http://lightspark.sourceforge.net">
-        lightspark.sourceforge.net
-    </a>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lightspark</title>
+    <meta name="description" content="The Lightspark project">
+    <meta name="author" content="The Lightspark developers">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+    <style type="text/css">
+      /* Override some defaults */
+      html, body {
+        font-size: 1.1em;
+        background-color: #eee;
+      }
+      body {
+        padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+      }
+      .container > footer p {
+        text-align: center; /* center align it with the container */
+      }
+      .container {
+        width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+      }
+
+      /* The white background content wrapper */
+      .content {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+        -webkit-border-radius: 0 0 6px 6px;
+           -moz-border-radius: 0 0 6px 6px;
+                border-radius: 0 0 6px 6px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      }
+
+      /* Page header tweaks */
+      .page-header {
+        background-color: #ffffff;
+        padding: 20px 20px 10px;
+        margin: -20px -20px 20px;
+      }
+
+      /* Styles you shouldn't keep as they are for displaying this base example only */
+      .content .span10,
+      .content .span4 {
+        min-height: 500px;
+      }
+      /* Give a quick and non-cross-browser friendly divider */
+      .content .span4 {
+        margin-left: 0;
+        padding-left: 19px;
+        border-left: 1px solid #eee;
+      }
+
+      .topbar .btn {
+        border: 0;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">Lightspark</a>
+          <ul class="nav">
+            <li><a href="http://github.com/lightspark/lightspark">Code</a></li>
+            <li><a href="http://bugs.launchpad.net/lightspark">Bugs</a></li>
+            <li><a href="http://github.com/lightspark/lightspark/wiki">Wiki</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+          <div class="page-header">
+              <img src="images/g168.png" alt="logo">
+          <h1 style="display:inline">Lightspark, a free, open source Flash player</h1>
+        </div>
+        <div class="row">
+          <div class="span10">
+              <h2>Overview</h2>
+              Lightspark is a GPLv3 licensed Flash player and browser plugin written in C++/C that runs on Linux.
+              It aims to support Adobe's newer Flash formats and AVM2 virtual machine.
+              <br>
+              <br>
+              <h2>Current status</h2>
+              The last released version in 0.5.2, download it from <a href="https://launchpad.net/lightspark">here</a>
+              <br>
+              Lightspark currently supports YouTube playing well. For up-to-date information regarding support of
+              various websites see <a href="https://github.com/lightspark/lightspark/wiki/Site-Support">this wiki page</a>
+              <br>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; The Lightspark Developers 2011</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
 </html>
