@@ -5,14 +5,14 @@
     <title>Lightspark</title>
     <meta name="description" content="The Lightspark project">
     <meta name="author" content="The Lightspark developers">
-
+    <link href="images/g168.ico" rel="shortcut icon">
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       /* Override some defaults */
       html, body {
@@ -23,6 +23,23 @@
       body {
         padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
       }
+        nav {
+            text-align:center;
+        }
+        
+        nav a {
+            text-decoration:none;
+            border-right:1px solid black;
+            padding-right:5px;
+        }
+        
+        .last {
+            border-right-style:none;
+        }
+        
+        a:hover {
+            color:purple;
+        }
       .container > footer p {
         text-align: center; /* center align it with the container */
       }
@@ -77,12 +94,12 @@
       <div class="fill">
         <div class="container">
           <a class="brand" href="#">Lightspark</a>
-          <ul class="nav">
-            <li><a href="http://github.com/lightspark/lightspark">Code</a></li>
-            <li><a href="http://bugs.launchpad.net/lightspark">Bugs</a></li>
-            <li><a href="http://launchpad.net/lightspark/+download">Download</a></li>
-            <li><a href="http://github.com/lightspark/lightspark/wiki">Wiki</a></li>
-          </ul>
+          <nav>
+            <a href="http://github.com/lightspark/lightspark">Code</a>
+            <a href="http://bugs.launchpad.net/lightspark">Bugs</a>
+            <a href="http://launchpad.net/lightspark/+download">Download</a>
+            <a class="last" href="http://github.com/lightspark/lightspark/wiki">Wiki</a>
+          </nav>
         </div>
       </div>
     </div>
