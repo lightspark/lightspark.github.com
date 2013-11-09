@@ -12,7 +12,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       /* Override some defaults */
       html, body {
@@ -23,18 +23,20 @@
       body {
         padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
       }
+        .brand {
+          text-align: center;
+          font-size: 2em;
+          margin-bottom: 20px;
+        }
+
         nav {
             text-align:center;
+            padding-bottom: 10px;
         }
-        
-        nav a {
-            text-decoration:none;
-            border-right:1px solid black;
-            padding-right:5px;
-        }
-        
-        .last {
-            border-right-style:none;
+
+        .logo {
+          padding: 0 0 0 5px;
+          float: right;
         }
         
         a:hover {
@@ -44,7 +46,7 @@
         text-align: center; /* center align it with the container */
       }
       .container {
-        width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+        max-width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
       }
 
       /* The white background content wrapper */
@@ -64,14 +66,19 @@
       .page-header {
         background-color: #ffffff;
         padding: 20px 20px 10px;
-        margin: -20px -20px 20px;
+        margin: -20px -20px 0px;
+        text-align: center;
+      }
+
+      h1 {
+        display: inline;
       }
 
       /* Styles you shouldn't keep as they are for displaying this base example only */
       .content .span10,
       .content .span4 {
         min-height: 500px;
-        width: 780px;
+        max-width: 780px;
       }
       /* Give a quick and non-cross-browser friendly divider */
       .content .span4 {
@@ -79,9 +86,13 @@
         padding-left: 19px;
         border-left: 1px solid #eee;
       }
-
-      .topbar .btn {
-        border: 0;
+      /* Give some padding to main content area */
+      .row {
+        padding: 10px;
+      }
+      footer {
+        margin-top: 10px;
+        font-size: 0.8em;
       }
 
     </style>
@@ -93,12 +104,14 @@
     <div class="topbar">
       <div class="fill">
         <div class="container">
-          <a class="brand" href="#">Lightspark</a>
+          <div class="brand">Lightspark</div>
           <nav>
-            <a href="http://github.com/lightspark/lightspark">Code</a>
-            <a href="http://bugs.launchpad.net/lightspark">Bugs</a>
-            <a href="http://launchpad.net/lightspark/+download">Download</a>
-            <a class="last" href="http://github.com/lightspark/lightspark/wiki">Wiki</a>
+            <div class="btn-group">
+              <a class="btn btn-default" href="http://github.com/lightspark/lightspark">Code</a>
+              <a class="btn btn-default" href="http://bugs.launchpad.net/lightspark">Bugs</a>
+              <a class="btn btn-default" href="http://launchpad.net/lightspark/+download">Download</a>
+              <a class="btn btn-default" href="http://github.com/lightspark/lightspark/wiki">Wiki</a>
+            </div>
           </nav>
         </div>
       </div>
@@ -108,15 +121,14 @@
 
       <div class="content">
           <div class="page-header">
-              <img src="images/g168.png" alt="logo">
-          <h1 style="display:inline">Lightspark, a free, open source Flash player</h1>
+          <h1>A free, open source Flash player</h1>
         </div>
         <div class="row">
           <div class="span10">
               <h2>Overview</h2>
+              <img class="logo" src="images/g168.png" alt="logo">
               Lightspark is an LGPLv3 licensed Flash player and browser plugin written in C++/C that runs on Linux.
               It aims to support Adobe's newer Flash formats and AVM2 virtual machine.
-              <br>
               <br>
               <h2>Current status</h2>
               The latest released version in 0.7.2, download it from <a href="https://launchpad.net/lightspark/+download">here</a>.
@@ -124,18 +136,15 @@
               Lightspark currently supports YouTube well enough for daily use. For up-to-date information regarding support of
               various other websites see <a href="https://github.com/lightspark/lightspark/wiki/Site-Support">this wiki page</a>.
               <br>
-              <br>
 	      <h2>Report bugs</h2>
 	      We really need your bug reports to help Lightspark become a mature and high quality Open Source Software.
               <br>
 	      Please see <a href="https://github.com/lightspark/lightspark/wiki/Reporting-Bugs">here</a> for tips on how to report a bug.
               <br>
-              <br>
               <h2>Contact</h2>
               Mailing list: lightspark-users@lists.launchpad.net, <a href="https://launchpad.net/~lightspark-users">Archives and subscribe information</a>.
               <br>
               IRC channel: #lightspark on Freenode
-              <br>
               <br>
 	      <h2>Donate</h2>
 	      Using Flattr!
